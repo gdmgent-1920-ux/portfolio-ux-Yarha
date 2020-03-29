@@ -36,7 +36,7 @@ const data = {
             {
                 "text": "Adobe XD Prototype",
                 "title": "Mijn Adobe XD prototype (share link)",
-                "href": "https://xd.adobe.com/view/38b22144-aa4a-4e51-4840-949cce028fd8-4e83/",
+                "href": "https://xd.adobe.com/view/2c577a59-1d64-46d8-4f58-265cd36f1008-5a66/",
                 "target": "_blank"
             }
         ]
@@ -62,7 +62,7 @@ const data = {
             {
                 "text": "Adobe XD Prototype",
                 "title": "Mijn Adobe XD prototype (share link)",
-                "href": "https://xd.adobe.com/view/e4c35170-a2f7-4c10-753b-ba7c449703ec-92f2/grid",
+                "href": "https://xd.adobe.com/view/72ce2b26-3c2d-47be-561a-94220727eac0-04ff/",
                 "target": "_blank"
             }
         ]
