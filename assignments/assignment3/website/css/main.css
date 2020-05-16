@@ -1,0 +1,429 @@
+/**
+* My main stylesheet
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-font);
+
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-backgroundgreen);
+}
+
+h1 {
+    padding: 0;
+    padding-top: 5px;
+    margin: auto 0;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: var(--text-font);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 35px;
+    padding-bottom: 3px;
+    margin-bottom: 45px;
+    border-bottom: 1.5px solid var(--color-black);
+}
+
+p {
+    font-size: 12px;
+    font-family: var(--text-font);
+    line-height: 18px;
+}
+
+p.detail-text {
+    margin-bottom: 55px;
+}
+
+a {
+    color: var(--color-black);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: color .4s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-black);
+}
+
+ul {
+    padding: 0;
+}
+
+
+/*
+* BUTTON
+*/
+
+button {
+    background-color: var(--color-lightgreen);
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 13px;
+}
+
+button.button-detail {
+    background-color: var(--color-black);
+}
+
+main div.contact {
+    padding: 35px 0px;
+    background-color: var(--color-green);
+}
+
+button.button-list {
+    margin-top: 0;
+}
+
+
+/*
+* IMAGES
+*/
+
+img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: flex;
+}
+
+img.fourth-img {
+    width: 80%;
+    height: 140px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 35px;
+}
+
+img.detail-img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+
+/**
+* CARD
+*/
+.card {
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35);
+    margin-bottom: 35px;
+}
+
+img.card-img {
+    width: 100%;
+    height: 198px;
+    object-fit: cover;
+}
+
+p.list {
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
+
+/**
+* TEXT ALIGN
+*/
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+/**
+ * HEADER
+ */
+
+.header {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/**
+* FOOTER
+*/
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 2px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid var(--color-white);
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--color-footergreen);
+    color: var(--color-white);
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+footer.home-page{
+    margin-top: 65px;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+footer div ul li a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--color-white);
+}
+
+footer li.footer-border {
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--color-white);
+}
+
+footer ul h1 {
+    padding-top: 130px;
+}
+
+footer div ul h1.footer-name {
+    padding-bottom: 13px;
+}
+
+footer div a i {
+    margin-top: 30px;
+    width: 70px;
+    font-size: 30px;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+footer.detail,
+footer.list {
+    margin: 0;
+}
+
+
+/**
+  * NAVIGATION
+  */
+
+nav {
+    background-color: var(--color-white);
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links.toggled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-green);
+}
+
+
+
+/*/
+/* DESKTOP */
+/***/
+
+
+@media (min-width: 768px) {
+
+    footer div a i {
+        margin-top: 30px;
+        width: 230px;
+        font-size: 30px;
+        color: var(--color-black);
+        text-decoration: none;
+    }
+    
+    button.button-detail {
+        background-color: var(--color-black);
+        padding: 15px 35px;
+        font-weight: 700;
+    }
+
+    img.detail-img-2{
+        width: 100%;
+        height: 315px;
+        object-fit: cover;
+        padding-top: 15px;
+    }
+
+    img.detail-img{
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+    }
+
+    img.detail-img-large{
+        width: 100%;
+        height: 625px;
+        object-fit: cover;
+        padding-right: 15px;
+    }
+
+    p.list {
+        font-size: 15px;
+    }
+
+    .card {
+        margin-bottom: 55px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    img.card-img {
+        width: 100%;
+        height: 375px;
+        object-fit: cover;
+    }
+
+    footer {
+        padding-top: 70px;
+        padding-bottom: 125px;
+    }
+
+    footer.home-page{
+        margin-top: 155px;
+    }
+
+    p.pond-text {
+        margin-top: 75px;
+        margin-left: 60px;
+    }
+
+    main div .reverse {
+        flex-direction: row-reverse;
+    }
+
+    h2 {
+        margin-top: 60px;
+    }
+
+    button {
+        margin-top: 70px;
+        margin-bottom: 70px;
+
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    h2 {
+        font-size: 18px;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul a {
+        margin-right: 20px;
+        padding-right: 20px;
+        text-transform: uppercase;
+        font-family: var(--text-font);
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--color-white);
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 635px;
+        object-fit: cover;
+    }
+
+    img.fourth-img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        margin-top: 35px;
+    }
+}
+
+/**
+   * Navigation Toggle
+   */
+
+
+@media (min-width: 768px) {
+    .nav-toggler {
+        display: none;
+    }
+}
+
+.nav-toggler .bar1,
+.nav-toggler .bar2,
+.nav-toggler .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-white);
+    margin: 6px 0;
+    transition: 0.4s;
+}

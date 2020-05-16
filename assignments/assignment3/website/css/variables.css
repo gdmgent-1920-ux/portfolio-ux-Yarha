@@ -1,0 +1,15 @@
+/**
+Variables
+*/
+
+:root{
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-backgroundgreen: #F5FFF8;
+    --color-footergreen: #4B7158;
+    --color-green: #4B957B;
+    --color-lightgreen: #3AAFA9;
+
+    --text-font: 'Noto Sans', sans-serif;
+    --title-font: 'Stardos Stencil', cursive;
+}
